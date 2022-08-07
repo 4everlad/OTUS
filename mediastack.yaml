@@ -1,0 +1,131 @@
+openapi: 3.0.3
+info:
+  title: Mediastack.com
+  description: Mediastack.com
+  version: 1.0.0
+servers:
+- url: http://api.mediastack.com/v1/
+tags:
+- name: news
+  description: News
+paths:
+  /news:
+    get:
+      tags:
+      - news
+      summary: News List
+      operationId: getNews
+      parameters:
+      - name: access_key
+        in: query
+        description: API key
+        required: true
+        schema:
+          type: string
+      - name: sources
+        in: query
+        description: News sources (CNN, BBC, etc.)
+        required: false
+        schema:
+          type: string
+      - name: categories
+        in: query
+        description: News categories (business, sports, etc.)
+        required: false
+        schema:
+          type: string
+      - name: languages
+        in: query
+        description: Language in two letters
+        required: false
+        schema:
+          type: string
+      - name: limit
+        in: query
+        description: Number of results per page
+        required: false
+        schema:
+          type: string
+      - name: offset
+        in: query
+        description: Pagination offset value
+        required: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewsList'
+        default:
+          description: enexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+components:
+  schemas:
+    NewsList:
+      required:
+      - totalResults
+      type: object
+      properties:
+        pagination:
+          source:
+          $ref: '#/components/schemas/Pagination'
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/News'
+    ErrorModel:
+        required: 
+          - error
+        properties: 
+          error: 
+            required: 
+              - code
+              - message
+            properties: 
+              code: 
+                type: string
+              message: 
+                type: string
+            type: object
+    News:
+      required:
+      - url
+      type: object
+      properties:
+        author:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+        url:
+          type: string
+        source:
+          type: string  
+        image:
+          type: string        
+        category:
+          type: string
+        language:
+          type: string
+        country:
+          type: string
+        published_at:
+          type: string
+    Pagination:
+      type: object
+      properties:
+        limit:
+          type: integer
+        offset:
+          type: integer
+        count:
+          type: integer
+        total:
+          type: integer

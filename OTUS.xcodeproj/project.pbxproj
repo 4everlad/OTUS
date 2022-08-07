@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D75E6D7D289FF29700F873BD /* OTUSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6D7C289FF29700F873BD /* OTUSApp.swift */; };
-		D75E6D7F289FF29700F873BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6D7E289FF29700F873BD /* ContentView.swift */; };
 		D75E6D81289FF29E00F873BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75E6D80289FF29E00F873BD /* Assets.xcassets */; };
 		D75E6D84289FF29E00F873BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75E6D83289FF29E00F873BD /* Preview Assets.xcassets */; };
 		D75E6D8E289FF29E00F873BD /* OTUSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6D8D289FF29E00F873BD /* OTUSTests.swift */; };
 		D75E6D98289FF29E00F873BD /* OTUSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6D97289FF29E00F873BD /* OTUSUITests.swift */; };
 		D75E6D9A289FF29E00F873BD /* OTUSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6D99289FF29E00F873BD /* OTUSUITestsLaunchTests.swift */; };
+		D75E6DA7289FF64300F873BD /* NewsFeedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DA6289FF64300F873BD /* NewsFeedScreenView.swift */; };
+		D75E6DAE289FF7CB00F873BD /* DescriptionScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DAD289FF7CB00F873BD /* DescriptionScreenView.swift */; };
+		D75E6DB0289FF81500F873BD /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DAF289FF81500F873BD /* NewsListView.swift */; };
+		D75E6DB2289FF83E00F873BD /* NewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DB1289FF83E00F873BD /* NewsCellView.swift */; };
+		D75E6DB4289FF86D00F873BD /* NewsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DB3289FF86D00F873BD /* NewsScreenView.swift */; };
+		D75E6DB6289FF8B200F873BD /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DB5289FF8B200F873BD /* NewsViewModel.swift */; };
+		D75E6DB9289FF8DC00F873BD /* mediastack.yaml in Resources */ = {isa = PBXBuildFile; fileRef = D75E6DB7289FF8DB00F873BD /* mediastack.yaml */; };
+		D75E6DBA289FF8DC00F873BD /* generate.sh in Resources */ = {isa = PBXBuildFile; fileRef = D75E6DB8289FF8DC00F873BD /* generate.sh */; };
+		D75E6DBD289FF92500F873BD /* NavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DBC289FF92500F873BD /* NavigationContainer.swift */; };
+		D75E6DBF289FF94300F873BD /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DBE289FF94300F873BD /* NavigationStack.swift */; };
+		D75E6DC1289FF96300F873BD /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DC0289FF96300F873BD /* NavigationViewModel.swift */; };
+		D75E6DC3289FF98000F873BD /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DC2289FF98000F873BD /* Screen.swift */; };
+		D75E6DC5289FF9A200F873BD /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DC4289FF9A200F873BD /* View+AnyView.swift */; };
+		D75E6DC8289FF9C800F873BD /* LoadingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DC7289FF9C800F873BD /* LoadingProgressView.swift */; };
+		D75E6DCB289FFA0300F873BD /* Collections+Indexes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DCA289FFA0300F873BD /* Collections+Indexes.swift */; };
+		D75E6DCD289FFA2800F873BD /* Model+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DCC289FFA2800F873BD /* Model+Identifiable.swift */; };
+		D75E6DCF289FFA5200F873BD /* NewsCell+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DCE289FFA5200F873BD /* NewsCell+Loading.swift */; };
+		D75E6DD2289FFA8200F873BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DD1289FFA8200F873BD /* Constants.swift */; };
+		D75E6DD6289FFD1A00F873BD /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = D75E6DD5289FFD1A00F873BD /* NetworkLayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +54,6 @@
 /* Begin PBXFileReference section */
 		D75E6D79289FF29700F873BD /* OTUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75E6D7C289FF29700F873BD /* OTUSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUSApp.swift; sourceTree = "<group>"; };
-		D75E6D7E289FF29700F873BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D75E6D80289FF29E00F873BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D75E6D83289FF29E00F873BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D75E6D89289FF29E00F873BD /* OTUSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTUSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +61,26 @@
 		D75E6D93289FF29E00F873BD /* OTUSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTUSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75E6D97289FF29E00F873BD /* OTUSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUSUITests.swift; sourceTree = "<group>"; };
 		D75E6D99289FF29E00F873BD /* OTUSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D75E6DA6289FF64300F873BD /* NewsFeedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedScreenView.swift; sourceTree = "<group>"; };
+		D75E6DA9289FF70C00F873BD /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkLayer; path = Packages/NetworkLayer; sourceTree = SOURCE_ROOT; };
+		D75E6DAD289FF7CB00F873BD /* DescriptionScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionScreenView.swift; sourceTree = "<group>"; };
+		D75E6DAF289FF81500F873BD /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		D75E6DB1289FF83E00F873BD /* NewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellView.swift; sourceTree = "<group>"; };
+		D75E6DB3289FF86D00F873BD /* NewsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreenView.swift; sourceTree = "<group>"; };
+		D75E6DB5289FF8B200F873BD /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		D75E6DB7289FF8DB00F873BD /* mediastack.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = mediastack.yaml; sourceTree = SOURCE_ROOT; };
+		D75E6DB8289FF8DC00F873BD /* generate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate.sh; sourceTree = SOURCE_ROOT; };
+		D75E6DBC289FF92500F873BD /* NavigationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationContainer.swift; sourceTree = "<group>"; };
+		D75E6DBE289FF94300F873BD /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
+		D75E6DC0289FF96300F873BD /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		D75E6DC2289FF98000F873BD /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		D75E6DC4289FF9A200F873BD /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
+		D75E6DC7289FF9C800F873BD /* LoadingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProgressView.swift; sourceTree = "<group>"; };
+		D75E6DCA289FFA0300F873BD /* Collections+Indexes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+Indexes.swift"; sourceTree = "<group>"; };
+		D75E6DCC289FFA2800F873BD /* Model+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Identifiable.swift"; sourceTree = "<group>"; };
+		D75E6DCE289FFA5200F873BD /* NewsCell+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsCell+Loading.swift"; sourceTree = "<group>"; };
+		D75E6DD1289FFA8200F873BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D75E6DD728A00FBA00F873BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75E6DD6289FFD1A00F873BD /* NetworkLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +112,12 @@
 		D75E6D70289FF29700F873BD = {
 			isa = PBXGroup;
 			children = (
+				D75E6DD3289FFD0000F873BD /* Packages */,
 				D75E6D7B289FF29700F873BD /* OTUS */,
 				D75E6D8C289FF29E00F873BD /* OTUSTests */,
 				D75E6D96289FF29E00F873BD /* OTUSUITests */,
 				D75E6D7A289FF29700F873BD /* Products */,
+				D75E6DD4289FFD1A00F873BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +134,16 @@
 		D75E6D7B289FF29700F873BD /* OTUS */ = {
 			isa = PBXGroup;
 			children = (
+				D75E6DD728A00FBA00F873BD /* Info.plist */,
+				D75E6DD0289FFA6B00F873BD /* Common */,
+				D75E6DC9289FF9D900F873BD /* Extensions */,
+				D75E6DC6289FF9AD00F873BD /* Modifiers */,
+				D75E6DBB289FF90300F873BD /* NavigationStack */,
+				D75E6DB8289FF8DC00F873BD /* generate.sh */,
+				D75E6DB7289FF8DB00F873BD /* mediastack.yaml */,
+				D75E6DAA289FF78200F873BD /* NewsList */,
 				D75E6D7C289FF29700F873BD /* OTUSApp.swift */,
-				D75E6D7E289FF29700F873BD /* ContentView.swift */,
+				D75E6DA6289FF64300F873BD /* NewsFeedScreenView.swift */,
 				D75E6D80289FF29E00F873BD /* Assets.xcassets */,
 				D75E6D82289FF29E00F873BD /* Preview Content */,
 			);
@@ -127,6 +175,87 @@
 			path = OTUSUITests;
 			sourceTree = "<group>";
 		};
+		D75E6DAA289FF78200F873BD /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DAB289FF78F00F873BD /* Views */,
+				D75E6DAC289FF79B00F873BD /* Models */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		D75E6DAB289FF78F00F873BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DAF289FF81500F873BD /* NewsListView.swift */,
+				D75E6DB1289FF83E00F873BD /* NewsCellView.swift */,
+				D75E6DAD289FF7CB00F873BD /* DescriptionScreenView.swift */,
+				D75E6DB3289FF86D00F873BD /* NewsScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D75E6DAC289FF79B00F873BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DB5289FF8B200F873BD /* NewsViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D75E6DBB289FF90300F873BD /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DBC289FF92500F873BD /* NavigationContainer.swift */,
+				D75E6DBE289FF94300F873BD /* NavigationStack.swift */,
+				D75E6DC0289FF96300F873BD /* NavigationViewModel.swift */,
+				D75E6DC2289FF98000F873BD /* Screen.swift */,
+				D75E6DC4289FF9A200F873BD /* View+AnyView.swift */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
+		D75E6DC6289FF9AD00F873BD /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DC7289FF9C800F873BD /* LoadingProgressView.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D75E6DC9289FF9D900F873BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DCA289FFA0300F873BD /* Collections+Indexes.swift */,
+				D75E6DCC289FFA2800F873BD /* Model+Identifiable.swift */,
+				D75E6DCE289FFA5200F873BD /* NewsCell+Loading.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D75E6DD0289FFA6B00F873BD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DD1289FFA8200F873BD /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D75E6DD3289FFD0000F873BD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D75E6DA9289FF70C00F873BD /* NetworkLayer */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		D75E6DD4289FFD1A00F873BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +272,9 @@
 			dependencies = (
 			);
 			name = OTUS;
+			packageProductDependencies = (
+				D75E6DD5289FFD1A00F873BD /* NetworkLayer */,
+			);
 			productName = OTUS;
 			productReference = D75E6D79289FF29700F873BD /* OTUS.app */;
 			productType = "com.apple.product-type.application";
@@ -232,7 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D75E6D84289FF29E00F873BD /* Preview Assets.xcassets in Resources */,
+				D75E6DB9289FF8DC00F873BD /* mediastack.yaml in Resources */,
 				D75E6D81289FF29E00F873BD /* Assets.xcassets in Resources */,
+				D75E6DBA289FF8DC00F873BD /* generate.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +391,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D75E6D7F289FF29700F873BD /* ContentView.swift in Sources */,
+				D75E6DC8289FF9C800F873BD /* LoadingProgressView.swift in Sources */,
+				D75E6DBF289FF94300F873BD /* NavigationStack.swift in Sources */,
+				D75E6DCB289FFA0300F873BD /* Collections+Indexes.swift in Sources */,
+				D75E6DA7289FF64300F873BD /* NewsFeedScreenView.swift in Sources */,
+				D75E6DAE289FF7CB00F873BD /* DescriptionScreenView.swift in Sources */,
+				D75E6DC1289FF96300F873BD /* NavigationViewModel.swift in Sources */,
+				D75E6DB0289FF81500F873BD /* NewsListView.swift in Sources */,
+				D75E6DB2289FF83E00F873BD /* NewsCellView.swift in Sources */,
 				D75E6D7D289FF29700F873BD /* OTUSApp.swift in Sources */,
+				D75E6DC5289FF9A200F873BD /* View+AnyView.swift in Sources */,
+				D75E6DBD289FF92500F873BD /* NavigationContainer.swift in Sources */,
+				D75E6DB4289FF86D00F873BD /* NewsScreenView.swift in Sources */,
+				D75E6DB6289FF8B200F873BD /* NewsViewModel.swift in Sources */,
+				D75E6DC3289FF98000F873BD /* Screen.swift in Sources */,
+				D75E6DCD289FFA2800F873BD /* Model+Identifiable.swift in Sources */,
+				D75E6DCF289FFA5200F873BD /* NewsCell+Loading.swift in Sources */,
+				D75E6DD2289FFA8200F873BD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +571,7 @@
 				DEVELOPMENT_TEAM = P3JC9RT8Q8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTUS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +601,7 @@
 				DEVELOPMENT_TEAM = P3JC9RT8Q8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTUS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +736,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D75E6DD5289FFD1A00F873BD /* NetworkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D75E6D71289FF29700F873BD /* Project object */;
 }

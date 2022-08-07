@@ -11,7 +11,10 @@ import SwiftUI
 struct OTUSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationContainer {
+                NewsFeedScreenView()
+            }
+                .environmentObject(NewsViewModel())
         }
     }
 }
