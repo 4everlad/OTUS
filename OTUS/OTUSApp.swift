@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct OTUSApp: App {
+    init() {
+        Configurator.shared.register()
+    }
+    
     var body: some Scene {
         WindowGroup {
             NavigationContainer {

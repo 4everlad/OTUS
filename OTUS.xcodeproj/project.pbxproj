@@ -32,6 +32,10 @@
 		D75E6DCF289FFA5200F873BD /* NewsCell+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DCE289FFA5200F873BD /* NewsCell+Loading.swift */; };
 		D75E6DD2289FFA8200F873BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DD1289FFA8200F873BD /* Constants.swift */; };
 		D75E6DD6289FFD1A00F873BD /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = D75E6DD5289FFD1A00F873BD /* NetworkLayer */; };
+		D79E11ED28BEA301001E8A42 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11EC28BEA301001E8A42 /* ServiceLocator.swift */; };
+		D79E11EF28BEA464001E8A42 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11EE28BEA464001E8A42 /* Configurator.swift */; };
+		D79E11F128BEA4A7001E8A42 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11F028BEA4A7001E8A42 /* NetworkService.swift */; };
+		D79E11F328BEA4F5001E8A42 /* InjectedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11F228BEA4F5001E8A42 /* InjectedWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		D75E6DCE289FFA5200F873BD /* NewsCell+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsCell+Loading.swift"; sourceTree = "<group>"; };
 		D75E6DD1289FFA8200F873BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D75E6DD728A00FBA00F873BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D79E11EC28BEA301001E8A42 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		D79E11EE28BEA464001E8A42 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		D79E11F028BEA4A7001E8A42 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D79E11F228BEA4F5001E8A42 /* InjectedWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +142,10 @@
 		D75E6D7B289FF29700F873BD /* OTUS */ = {
 			isa = PBXGroup;
 			children = (
+				D79E11EB28BEA108001E8A42 /* Injected */,
 				D75E6DD728A00FBA00F873BD /* Info.plist */,
 				D75E6DD0289FFA6B00F873BD /* Common */,
+				D79E11EA28BEA0A9001E8A42 /* Services */,
 				D75E6DC9289FF9D900F873BD /* Extensions */,
 				D75E6DC6289FF9AD00F873BD /* Modifiers */,
 				D75E6DBB289FF90300F873BD /* NavigationStack */,
@@ -254,6 +264,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D79E11EA28BEA0A9001E8A42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D79E11F028BEA4A7001E8A42 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D79E11EB28BEA108001E8A42 /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				D79E11EC28BEA301001E8A42 /* ServiceLocator.swift */,
+				D79E11EE28BEA464001E8A42 /* Configurator.swift */,
+				D79E11F228BEA4F5001E8A42 /* InjectedWrapper.swift */,
+			);
+			path = Injected;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,14 +419,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79E11ED28BEA301001E8A42 /* ServiceLocator.swift in Sources */,
 				D75E6DC8289FF9C800F873BD /* LoadingProgressView.swift in Sources */,
+				D79E11F328BEA4F5001E8A42 /* InjectedWrapper.swift in Sources */,
 				D75E6DBF289FF94300F873BD /* NavigationStack.swift in Sources */,
 				D75E6DCB289FFA0300F873BD /* Collections+Indexes.swift in Sources */,
 				D75E6DA7289FF64300F873BD /* NewsFeedScreenView.swift in Sources */,
 				D75E6DAE289FF7CB00F873BD /* DescriptionScreenView.swift in Sources */,
+				D79E11EF28BEA464001E8A42 /* Configurator.swift in Sources */,
 				D75E6DC1289FF96300F873BD /* NavigationViewModel.swift in Sources */,
 				D75E6DB0289FF81500F873BD /* NewsListView.swift in Sources */,
 				D75E6DB2289FF83E00F873BD /* NewsCellView.swift in Sources */,
+				D79E11F128BEA4A7001E8A42 /* NetworkService.swift in Sources */,
 				D75E6D7D289FF29700F873BD /* OTUSApp.swift in Sources */,
 				D75E6DC5289FF9A200F873BD /* View+AnyView.swift in Sources */,
 				D75E6DBD289FF92500F873BD /* NavigationContainer.swift in Sources */,

@@ -14,6 +14,7 @@ enum NewsType: String, CaseIterable {
 
 final class NewsViewModel: ObservableObject {
     
+    @Injected var network: NetworkService?
     @Published var news: [News] = []
     @Published var newsType: NewsType = .business {
         didSet {
@@ -37,6 +38,7 @@ final class NewsViewModel: ObservableObject {
         canLoad = false
         NewsAPI.getNews(accessKey: Constants.apiKey, categories: newsType.rawValue, languages: "en", offset: newsCount, completion: { [weak self] data, error in
             if error == nil {
+                self?.network?.doRequest()
                 print("getNews: \(String(describing: data))")
                 self?.news.append(contentsOf: data?.data ?? [])
                 self?.totalNewsCount = data?.pagination?.total ?? .max
