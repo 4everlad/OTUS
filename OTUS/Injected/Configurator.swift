@@ -14,6 +14,6 @@ class Configurator {
     
     func register() {
         ServiceLocator.shared.addServices(service: NetworkService())
-//        ServiceLocator.shared.addServices(service: DataStorage())
+        ServiceLocator.shared.addServices(service: DataStorage())
     }
 }

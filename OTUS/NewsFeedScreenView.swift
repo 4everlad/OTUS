@@ -15,7 +15,7 @@ struct NewsFeedScreenView: View, ItemView {
     
     var body: some View {
         VStack {
-            Picker("News type", selection: $viewModel.newsType) {
+            Picker("News type", selection: $viewModel.newsType.optionalBinding(defaultValue: .business)) {
                 ForEach(NewsType.allCases, id: \.self) { value in
                     Text(value.rawValue)
                         .tag(value)

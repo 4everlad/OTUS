@@ -15,9 +15,12 @@ enum NewsType: String, CaseIterable {
 final class NewsViewModel: ObservableObject {
     
     @Injected var network: NetworkService?
+    @Injected var dataStorage: DataStorage?
     @Published var news: [News] = []
-    @Published var newsType: NewsType = .business {
+    @Published var newsType: NewsType? {
         didSet {
+            print("newsType didSet: \(newsType?.rawValue)")
+            dataStorage?.newsType = newsType
             news = []
             currentNewsCount = 0
             getNews()
@@ -27,7 +30,12 @@ final class NewsViewModel: ObservableObject {
     var canLoad = true
     private var totalNewsCount: Int = .max
     private var currentNewsCount: Int = 0
+
     
+    init() {
+        self.newsType = dataStorage?.newsType ?? .business
+        print("newsType init: \(newsType?.rawValue)")
+    }
     
     func getNews() {
         
@@ -36,6 +44,9 @@ final class NewsViewModel: ObservableObject {
         let newsCount = String(currentNewsCount)
         
         canLoad = false
+        guard let newsType = newsType else { return }
+        print("newsType getNews: \(newsType.rawValue)")
+
         NewsAPI.getNews(accessKey: Constants.apiKey, categories: newsType.rawValue, languages: "en", offset: newsCount, completion: { [weak self] data, error in
             if error == nil {
                 self?.network?.doRequest()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D723AE6328CF4EA70032A4FD /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723AE6228CF4EA70032A4FD /* DataStorage.swift */; };
+		D748717E28D6621500A1ACE6 /* Binding+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748717D28D6621500A1ACE6 /* Binding+extension.swift */; };
 		D75E6D7D289FF29700F873BD /* OTUSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6D7C289FF29700F873BD /* OTUSApp.swift */; };
 		D75E6D81289FF29E00F873BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75E6D80289FF29E00F873BD /* Assets.xcassets */; };
 		D75E6D84289FF29E00F873BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75E6D83289FF29E00F873BD /* Preview Assets.xcassets */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D723AE6228CF4EA70032A4FD /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		D748717D28D6621500A1ACE6 /* Binding+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+extension.swift"; sourceTree = "<group>"; };
 		D75E6D79289FF29700F873BD /* OTUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75E6D7C289FF29700F873BD /* OTUSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUSApp.swift; sourceTree = "<group>"; };
 		D75E6D80289FF29E00F873BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				D75E6DD1289FFA8200F873BD /* Constants.swift */,
+				D748717D28D6621500A1ACE6 /* Binding+extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				D79E11F028BEA4A7001E8A42 /* NetworkService.swift */,
+				D723AE6228CF4EA70032A4FD /* DataStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				D79E11F328BEA4F5001E8A42 /* InjectedWrapper.swift in Sources */,
 				D75E6DBF289FF94300F873BD /* NavigationStack.swift in Sources */,
 				D75E6DCB289FFA0300F873BD /* Collections+Indexes.swift in Sources */,
+				D748717E28D6621500A1ACE6 /* Binding+extension.swift in Sources */,
 				D75E6DA7289FF64300F873BD /* NewsFeedScreenView.swift in Sources */,
 				D75E6DAE289FF7CB00F873BD /* DescriptionScreenView.swift in Sources */,
 				D79E11EF28BEA464001E8A42 /* Configurator.swift in Sources */,
@@ -432,6 +439,7 @@
 				D75E6DB2289FF83E00F873BD /* NewsCellView.swift in Sources */,
 				D79E11F128BEA4A7001E8A42 /* NetworkService.swift in Sources */,
 				D75E6D7D289FF29700F873BD /* OTUSApp.swift in Sources */,
+				D723AE6328CF4EA70032A4FD /* DataStorage.swift in Sources */,
 				D75E6DC5289FF9A200F873BD /* View+AnyView.swift in Sources */,
 				D75E6DBD289FF92500F873BD /* NavigationContainer.swift in Sources */,
 				D75E6DB4289FF86D00F873BD /* NewsScreenView.swift in Sources */,
