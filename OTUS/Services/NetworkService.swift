@@ -6,9 +6,19 @@
 //
 
 import Foundation
+import NetworkLayer
 
 class NetworkService {
-    func doRequest(){
-        print("test: do your request")
+    func getNews(newsType: NewsType, offset: String, completion: @escaping(Result<NewsList, Error>) -> Void) {
+        NewsAPI.getNews(accessKey: Constants.apiKey, categories: newsType.rawValue, languages: "en", offset: offset, completion: { data, error in
+            if error == nil {
+                print("getNews: \(String(describing: data))")
+                completion(.success(data!))
+            } else {
+                print("newsError: \(String(describing: error))")
+                completion(.failure(error!))
+            }
+        })
+                
     }
 }

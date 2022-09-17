@@ -19,7 +19,6 @@ final class NewsViewModel: ObservableObject {
     @Published var news: [News] = []
     @Published var newsType: NewsType? {
         didSet {
-            print("newsType didSet: \(newsType?.rawValue)")
             dataStorage?.newsType = newsType
             news = []
             currentNewsCount = 0
@@ -34,7 +33,6 @@ final class NewsViewModel: ObservableObject {
     
     init() {
         self.newsType = dataStorage?.newsType ?? .business
-        print("newsType init: \(newsType?.rawValue)")
     }
     
     func getNews() {
@@ -47,14 +45,13 @@ final class NewsViewModel: ObservableObject {
         guard let newsType = newsType else { return }
         print("newsType getNews: \(newsType.rawValue)")
 
-        NewsAPI.getNews(accessKey: Constants.apiKey, categories: newsType.rawValue, languages: "en", offset: newsCount, completion: { [weak self] data, error in
-            if error == nil {
-                self?.network?.doRequest()
-                print("getNews: \(String(describing: data))")
-                self?.news.append(contentsOf: data?.data ?? [])
-                self?.totalNewsCount = data?.pagination?.total ?? .max
-                self?.currentNewsCount += data?.pagination?.count ?? 0
-            } else {
+        network?.getNews(newsType: newsType, offset: newsCount, completion: { [weak self] res in
+            switch res {
+            case .success(let newsList):
+                self?.news.append(contentsOf: newsList.data ?? [])
+                self?.totalNewsCount = newsList.pagination?.total ?? .max
+                self?.currentNewsCount += newsList.pagination?.count ?? 0
+            case .failure(let error):
                 print("newsError: \(String(describing: error))")
             }
             self?.canLoad = true

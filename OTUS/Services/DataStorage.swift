@@ -18,7 +18,6 @@ class DataStorage {
             return NewsType(rawValue: newsType)
         }
         set {
-            print("newsType DataStorage set: \(newValue?.rawValue)")
             UserDefaults.standard.set(newValue?.rawValue, forKey: "newsType")
         }
     }
