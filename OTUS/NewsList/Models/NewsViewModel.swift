@@ -44,7 +44,6 @@ final class NewsViewModel: ObservableObject {
         
         canLoad = false
         guard let newsType = newsType else { return }
-        print("newsType getNews: \(newsType.rawValue)")
 
         network?.getNews(newsType: newsType, offset: newsCount, completion: { [weak self] res in
             switch res {

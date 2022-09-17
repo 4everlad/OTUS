@@ -14,7 +14,6 @@ class DataStorage {
             guard let newsType = UserDefaults.standard.value(forKey: "newsType") as? String else {
                 return nil
             }
-            print("newsType DataStorage get: \(newsType)")
             return NewsType(rawValue: newsType)
         }
         set {
