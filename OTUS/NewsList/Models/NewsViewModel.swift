@@ -32,7 +32,6 @@ final class NewsViewModel: ObservableObject {
 
     
     init() {
-//        если newsType не optional, то получаю следующую ошибку - 'self' used in property access 'dataStorage' before all stored properties are initialized
         self.newsType = dataStorage?.newsType ?? .business
     }
     
