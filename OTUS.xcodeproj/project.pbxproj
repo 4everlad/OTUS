@@ -34,6 +34,8 @@
 		D75E6DCF289FFA5200F873BD /* NewsCell+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DCE289FFA5200F873BD /* NewsCell+Loading.swift */; };
 		D75E6DD2289FFA8200F873BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6DD1289FFA8200F873BD /* Constants.swift */; };
 		D75E6DD6289FFD1A00F873BD /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = D75E6DD5289FFD1A00F873BD /* NetworkLayer */; };
+		D75EA48928F30E9400EE0646 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EA48828F30E9400EE0646 /* TabController.swift */; };
+		D75EA48C28F30EF200EE0646 /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EA48B28F30EF200EE0646 /* ProfileScreenView.swift */; };
 		D79E11ED28BEA301001E8A42 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11EC28BEA301001E8A42 /* ServiceLocator.swift */; };
 		D79E11EF28BEA464001E8A42 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11EE28BEA464001E8A42 /* Configurator.swift */; };
 		D79E11F128BEA4A7001E8A42 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11F028BEA4A7001E8A42 /* NetworkService.swift */; };
@@ -89,6 +91,8 @@
 		D75E6DCE289FFA5200F873BD /* NewsCell+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsCell+Loading.swift"; sourceTree = "<group>"; };
 		D75E6DD1289FFA8200F873BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D75E6DD728A00FBA00F873BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D75EA48828F30E9400EE0646 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		D75EA48B28F30EF200EE0646 /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
 		D79E11EC28BEA301001E8A42 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		D79E11EE28BEA464001E8A42 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		D79E11F028BEA4A7001E8A42 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 		D75E6D7B289FF29700F873BD /* OTUS */ = {
 			isa = PBXGroup;
 			children = (
+				D75EA48A28F30ECF00EE0646 /* Profile */,
 				D79E11EB28BEA108001E8A42 /* Injected */,
 				D75E6DD728A00FBA00F873BD /* Info.plist */,
 				D75E6DD0289FFA6B00F873BD /* Common */,
@@ -160,6 +165,7 @@
 				D75E6DA6289FF64300F873BD /* NewsFeedScreenView.swift */,
 				D75E6D80289FF29E00F873BD /* Assets.xcassets */,
 				D75E6D82289FF29E00F873BD /* Preview Content */,
+				D75EA48828F30E9400EE0646 /* TabController.swift */,
 			);
 			path = OTUS;
 			sourceTree = "<group>";
@@ -269,6 +275,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D75EA48A28F30ECF00EE0646 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D75EA48B28F30EF200EE0646 /* ProfileScreenView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		D79E11EA28BEA0A9001E8A42 /* Services */ = {
@@ -429,12 +443,14 @@
 				D75E6DC8289FF9C800F873BD /* LoadingProgressView.swift in Sources */,
 				D79E11F328BEA4F5001E8A42 /* InjectedWrapper.swift in Sources */,
 				D75E6DBF289FF94300F873BD /* NavigationStack.swift in Sources */,
+				D75EA48C28F30EF200EE0646 /* ProfileScreenView.swift in Sources */,
 				D75E6DCB289FFA0300F873BD /* Collections+Indexes.swift in Sources */,
 				D748717E28D6621500A1ACE6 /* Binding+extension.swift in Sources */,
 				D75E6DA7289FF64300F873BD /* NewsFeedScreenView.swift in Sources */,
 				D75E6DAE289FF7CB00F873BD /* DescriptionScreenView.swift in Sources */,
 				D79E11EF28BEA464001E8A42 /* Configurator.swift in Sources */,
 				D75E6DC1289FF96300F873BD /* NavigationViewModel.swift in Sources */,
+				D75EA48928F30E9400EE0646 /* TabController.swift in Sources */,
 				D75E6DB0289FF81500F873BD /* NewsListView.swift in Sources */,
 				D75E6DB2289FF83E00F873BD /* NewsCellView.swift in Sources */,
 				D79E11F128BEA4A7001E8A42 /* NetworkService.swift in Sources */,

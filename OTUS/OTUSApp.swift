@@ -16,7 +16,7 @@ struct OTUSApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationContainer {
-                NewsFeedScreenView()
+                TabController()
             }
                 .environmentObject(NewsViewModel())
         }
