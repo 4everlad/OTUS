@@ -36,6 +36,11 @@
 		D75E6DD6289FFD1A00F873BD /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = D75E6DD5289FFD1A00F873BD /* NetworkLayer */; };
 		D75EA48928F30E9400EE0646 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EA48828F30E9400EE0646 /* TabController.swift */; };
 		D75EA48C28F30EF200EE0646 /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EA48B28F30EF200EE0646 /* ProfileScreenView.swift */; };
+		D75EA4A928F317C900EE0646 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75EA4A828F317C900EE0646 /* WidgetKit.framework */; };
+		D75EA4AB28F317C900EE0646 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75EA4AA28F317C900EE0646 /* SwiftUI.framework */; };
+		D75EA4AE28F317C900EE0646 /* OTUSWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EA4AD28F317C900EE0646 /* OTUSWidget.swift */; };
+		D75EA4B028F317CD00EE0646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75EA4AF28F317CD00EE0646 /* Assets.xcassets */; };
+		D75EA4B428F317CD00EE0646 /* OTUSWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D75EA4A728F317C900EE0646 /* OTUSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D79E11ED28BEA301001E8A42 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11EC28BEA301001E8A42 /* ServiceLocator.swift */; };
 		D79E11EF28BEA464001E8A42 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11EE28BEA464001E8A42 /* Configurator.swift */; };
 		D79E11F128BEA4A7001E8A42 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E11F028BEA4A7001E8A42 /* NetworkService.swift */; };
@@ -57,7 +62,28 @@
 			remoteGlobalIDString = D75E6D78289FF29700F873BD;
 			remoteInfo = OTUS;
 		};
+		D75EA4B228F317CD00EE0646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D75E6D71289FF29700F873BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D75EA4A628F317C900EE0646;
+			remoteInfo = OTUSWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D75EA4B528F317CD00EE0646 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D75EA4B428F317CD00EE0646 /* OTUSWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D723AE6228CF4EA70032A4FD /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
@@ -93,6 +119,12 @@
 		D75E6DD728A00FBA00F873BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D75EA48828F30E9400EE0646 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		D75EA48B28F30EF200EE0646 /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
+		D75EA4A728F317C900EE0646 /* OTUSWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OTUSWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75EA4A828F317C900EE0646 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D75EA4AA28F317C900EE0646 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D75EA4AD28F317C900EE0646 /* OTUSWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUSWidget.swift; sourceTree = "<group>"; };
+		D75EA4AF28F317CD00EE0646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D75EA4B128F317CD00EE0646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D79E11EC28BEA301001E8A42 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		D79E11EE28BEA464001E8A42 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		D79E11F028BEA4A7001E8A42 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -122,6 +154,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D75EA4A428F317C900EE0646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75EA4AB28F317C900EE0646 /* SwiftUI.framework in Frameworks */,
+				D75EA4A928F317C900EE0646 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -132,6 +173,7 @@
 				D75E6D7B289FF29700F873BD /* OTUS */,
 				D75E6D8C289FF29E00F873BD /* OTUSTests */,
 				D75E6D96289FF29E00F873BD /* OTUSUITests */,
+				D75EA4AC28F317C900EE0646 /* OTUSWidget */,
 				D75E6D7A289FF29700F873BD /* Products */,
 				D75E6DD4289FFD1A00F873BD /* Frameworks */,
 			);
@@ -143,6 +185,7 @@
 				D75E6D79289FF29700F873BD /* OTUS.app */,
 				D75E6D89289FF29E00F873BD /* OTUSTests.xctest */,
 				D75E6D93289FF29E00F873BD /* OTUSUITests.xctest */,
+				D75EA4A728F317C900EE0646 /* OTUSWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +316,8 @@
 		D75E6DD4289FFD1A00F873BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D75EA4A828F317C900EE0646 /* WidgetKit.framework */,
+				D75EA4AA28F317C900EE0646 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,6 +328,16 @@
 				D75EA48B28F30EF200EE0646 /* ProfileScreenView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		D75EA4AC28F317C900EE0646 /* OTUSWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D75EA4AD28F317C900EE0646 /* OTUSWidget.swift */,
+				D75EA4AF28F317CD00EE0646 /* Assets.xcassets */,
+				D75EA4B128F317CD00EE0646 /* Info.plist */,
+			);
+			path = OTUSWidget;
 			sourceTree = "<group>";
 		};
 		D79E11EA28BEA0A9001E8A42 /* Services */ = {
@@ -314,10 +369,12 @@
 				D75E6D75289FF29700F873BD /* Sources */,
 				D75E6D76289FF29700F873BD /* Frameworks */,
 				D75E6D77289FF29700F873BD /* Resources */,
+				D75EA4B528F317CD00EE0646 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D75EA4B328F317CD00EE0646 /* PBXTargetDependency */,
 			);
 			name = OTUS;
 			packageProductDependencies = (
@@ -363,6 +420,23 @@
 			productReference = D75E6D93289FF29E00F873BD /* OTUSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D75EA4A628F317C900EE0646 /* OTUSWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75EA4B828F317CD00EE0646 /* Build configuration list for PBXNativeTarget "OTUSWidgetExtension" */;
+			buildPhases = (
+				D75EA4A328F317C900EE0646 /* Sources */,
+				D75EA4A428F317C900EE0646 /* Frameworks */,
+				D75EA4A528F317C900EE0646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTUSWidgetExtension;
+			productName = OTUSWidgetExtension;
+			productReference = D75EA4A728F317C900EE0646 /* OTUSWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -384,6 +458,9 @@
 						CreatedOnToolsVersion = 13.2;
 						TestTargetID = D75E6D78289FF29700F873BD;
 					};
+					D75EA4A628F317C900EE0646 = {
+						CreatedOnToolsVersion = 13.2;
+					};
 				};
 			};
 			buildConfigurationList = D75E6D74289FF29700F873BD /* Build configuration list for PBXProject "OTUS" */;
@@ -402,6 +479,7 @@
 				D75E6D78289FF29700F873BD /* OTUS */,
 				D75E6D88289FF29E00F873BD /* OTUSTests */,
 				D75E6D92289FF29E00F873BD /* OTUSUITests */,
+				D75EA4A628F317C900EE0646 /* OTUSWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -429,6 +507,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75EA4A528F317C900EE0646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75EA4B028F317CD00EE0646 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +570,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D75EA4A328F317C900EE0646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75EA4AE28F317C900EE0646 /* OTUSWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -496,6 +590,11 @@
 			isa = PBXTargetDependency;
 			target = D75E6D78289FF29700F873BD /* OTUS */;
 			targetProxy = D75E6D94289FF29E00F873BD /* PBXContainerItemProxy */;
+		};
+		D75EA4B328F317CD00EE0646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D75EA4A628F317C900EE0646 /* OTUSWidgetExtension */;
+			targetProxy = D75EA4B228F317CD00EE0646 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -619,6 +718,7 @@
 		D75E6D9E289FF29E00F873BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -649,6 +749,7 @@
 		D75E6D9F289FF29E00F873BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -752,6 +853,60 @@
 			};
 			name = Release;
 		};
+		D75EA4B628F317CD00EE0646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3JC9RT8Q8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTUSWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OTUSWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakulin.OTUS.OTUSWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D75EA4B728F317CD00EE0646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3JC9RT8Q8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTUSWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OTUSWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakulin.OTUS.OTUSWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -787,6 +942,15 @@
 			buildConfigurations = (
 				D75E6DA4289FF29E00F873BD /* Debug */,
 				D75E6DA5289FF29E00F873BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75EA4B828F317CD00EE0646 /* Build configuration list for PBXNativeTarget "OTUSWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75EA4B628F317CD00EE0646 /* Debug */,
+				D75EA4B728F317CD00EE0646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

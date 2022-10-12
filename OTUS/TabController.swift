@@ -11,7 +11,7 @@ struct TabController: View, ItemView {
     
     var listener: INavigationContainer?
     
-    @State var tabSelection: Int = 0
+    @Binding var tabSelection: Int
     
     var body: some View {
         
@@ -32,8 +32,8 @@ struct TabController: View, ItemView {
     }
 }
 
-struct TabView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabController()
-    }
-}
+//struct TabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TabController()
+//    }
+//}

@@ -13,12 +13,22 @@ struct OTUSApp: App {
         Configurator.shared.register()
     }
     
+    @State var tabSelection = 0
+    
     var body: some Scene {
+        
         WindowGroup {
             NavigationContainer {
-                TabController()
+                TabController(tabSelection: $tabSelection)
             }
                 .environmentObject(NewsViewModel())
+                .onOpenURL { url in
+                    if url == URL(string: "widget://NewsTab") {
+                        tabSelection = 0
+                    } else if url == URL(string: "widget://ProfileTab") {
+                        tabSelection = 1
+                    }
+                }
         }
     }
 }
